@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1777.78 1000">
+  <rect x="0" y="0" width="100%" height="100%" fill="#0074D9" />
+  <g>
+    <defs>
+      <filter id="shadow">
+        <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#FFFFFF" flood-opacity="1" />
+      </filter>
+      <filter id="liquid">
+        <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="5" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="20" xChannelSelector="R"
+          yChannelSelector="G" />
+      </filter>
+    </defs>
+
+    <circle cx="888.89" cy="500" r="300" fill="none" stroke="#FFFFFF" stroke-width="10"
+      filter="url(#shadow) url(#liquid)" />
+    <circle cx="888.89" cy="500" r="200" fill="none" stroke="#FFFFFF" stroke-width="10"
+      filter="url(#shadow) url(#liquid)" />
+    <polygon points="50,50 150,50 50,150" fill="#FFFFFF" />
+    <polygon points="1777.78,1000 1677.78,1000 1777.78,900" fill="#FFFFFF"
+      transform="translate(-100,-100)" />
+
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="200"
+      fill="#FFFFFF" filter="url(#shadow)">&#x1F4C1;</text>
+  </g>
+</svg>
